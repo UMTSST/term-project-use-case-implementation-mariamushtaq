@@ -1,0 +1,702 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+void Close(string name){
+cout<<"    ####################################################"<<endl
+<<"   #####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                   Room in a House                    #'Door  Status : Close"<<endl;
+cout<<"#         ";cout<<name;cout<<" Status : Close                       #'Fan   Status : Close"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Close"<<endl
+<<"#      ##      --O--            |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##                                        ##    #"<<endl
+<<"#      ##--O]                          (AC)      ##    #"<<endl
+<<"#      ##  (lamp)                                ##    #"<<endl
+<<"#      ##                        -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |##########|          |###### ######|  ##    #"<<endl
+<<"#      ## |##########|          |*****O O*****|  ##    #"<<endl
+<<"#      ## |#########O|          |###### ######|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#          __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void RoomDoorOpen(){
+cout<<"    ####################################################"<<endl
+<<"   #####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #"<<endl
+<<"#             Door Status : OPEN                       #"<<endl
+<<"#      ###########################################     #"<<endl
+<<"#      ##                                       ##     #"<<endl
+<<"#      ##                                       ##     #"<<endl
+<<"#      ##                                       ##     #"<<endl
+<<"#      ##           view from out-side          ##     #"<<endl
+<<"#      ##                                       ##     #"<<endl
+<<"#      ##                                       ##     #"<<endl
+<<"#      ##  __________                           ##     #"<<endl
+<<"#      ## |#####     |                          ##     #"<<endl
+<<"#      ## |#####     |                          ##     #"<<endl
+<<"#      ## |###O      |                          ##     #"<<endl
+<<"#      ## |#####     |                          ##     #"<<endl
+<<"#      ## |#####     |                          ##     #"<<endl
+<<"#      ## |#####     |                          ##     #"<<endl
+<<"#      ##  __________                           ##     #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void FanOpen(){
+cout<<"    ####################################################"<<endl
+<<"   #####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Open"<<endl
+<<"#              Fan Status : Open                       #'Fan   Status : Open"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Close"<<endl
+<<"#      ##     ```O```           |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##        `                               ##    #"<<endl
+<<"#      ##--O)    `                     (AC)      ##    #"<<endl
+<<"#      ##                                        ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |#####     |          |###### ######|  ##    #"<<endl
+<<"#      ## |#####     |          |*****O O*****|  ##    #"<<endl
+<<"#      ## |###O      |          |###### ######|  ##    #"<<endl
+<<"#      ## |#####     |          |#############|  ##    #"<<endl
+<<"#      ## |#####     |           -------------   ##    #"<<endl
+<<"#      ## |#####     |              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void FanDoorLightOpen(){
+cout<<"    ####################################################"<<endl
+<<"   #####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Open"<<endl
+<<"#                                                      #'Fan   Status : Open"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Open"<<endl
+<<"#      ##     ```O```           |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##        `                               ##    #"<<endl
+<<"#      ##--|)``  `                       (AC)    ##    #"<<endl
+<<"#      ##    ``                                  ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |#####     |          |###### ######|  ##    #"<<endl
+<<"#      ## |#####     |          |*****O O*****|  ##    #"<<endl
+<<"#      ## |###O      |          |###### ######|  ##    #"<<endl
+<<"#      ## |#####     |          |#############|  ##    #"<<endl
+<<"#      ## |#####     |           -------------   ##    #"<<endl
+<<"#      ## |#####     |              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void DcFoAcLoWc(){
+cout<<"    ####################################################"<<endl
+<<"    ####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Close"<<endl
+<<"#                                                      #'Fan   Status : Open"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Open"<<endl
+<<"#      ##     ```O```           |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##        `                               ##    #"<<endl
+<<"#      ##--|)``  `                  (AC)         ##    #"<<endl
+<<"#      ##    ``                                  ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |##########|          |###### ######|  ##    #"<<endl
+<<"#      ## |##########|          |*****O O*****|  ##    #"<<endl
+<<"#      ## |#########O|          |###### ######|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void DcFcAoLoWc(){
+cout<<"    ####################################################"<<endl
+<<"    ####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Close"<<endl
+<<"#                                                      #'Fan   Status : Close"<<endl
+<<"#      ############################################    #'AC    Status : Open"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Open"<<endl
+<<"#      ##      --O--            |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##                        ````````````    ##    #"<<endl
+<<"#      ##--|)``                     (AC)         ##    #"<<endl
+<<"#      ##    ``                                  ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |*****O O*****|  ##    #"<<endl
+<<"#      ## |#########O|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;}
+void AcOpen(){
+    cout<<"    ####################################################"<<endl
+<<"    ####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Close"<<endl
+<<"#                                                      #'Fan   Status : Close"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Open"<<endl
+<<"#      ##      --O--            |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##                        ````````````    ##    #"<<endl
+<<"#      ##--|)                       (AC)         ##    #"<<endl
+<<"#      ##                                        ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |*****O O*****|  ##    #"<<endl
+<<"#      ## |#########O|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+
+void DcFoAcLoWo(){
+    cout<<"    ####################################################"<<endl
+<<"    ####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Close"<<endl
+<<"#                                                      #'Fan   Status : Open"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Open"<<endl
+<<"#      ##     ```O```           |############|   ##    #'WindowStatus : Open"<<endl
+<<"#      ##        `                               ##    #"<<endl
+<<"#      ##--|)``  `                  (AC)         ##    #"<<endl
+<<"#      ##    ``                                  ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |####     ####|  ##    #"<<endl
+<<"#      ## |##########|          |####     ####|  ##    #"<<endl
+<<"#      ## |##########|          |***O     O***|  ##    #"<<endl
+<<"#      ## |#########O|          |####     ####|  ##    #"<<endl
+<<"#      ## |##########|          |####     ####|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void DcFcAcLoWc(){
+cout<<"    ####################################################"<<endl
+<<"    ####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Close"<<endl
+<<"#                                                      #'Fan   Status : Close"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Open"<<endl
+<<"#      ##      --O--            |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##                                        ##    #"<<endl
+<<"#      ##--|)``                     (AC)         ##    #"<<endl
+<<"#      ##    ``                                  ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |*****O O*****|  ##    #"<<endl
+<<"#      ## |#########O|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void DcFcAoLcWc(){
+cout<<"    ####################################################"<<endl
+<<"    ####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Close"<<endl
+<<"#                                                      #'Fan   Status : Close"<<endl
+<<"#      ############################################    #'AC    Status : Open"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Close"<<endl
+<<"#      ##      --O--            |############|   ##    #'WindowStatus : Close"<<endl
+<<"#      ##                        ````````````    ##    #"<<endl
+<<"#      ##--|)                       (AC)         ##    #"<<endl
+<<"#      ##                                        ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |*****O O*****|  ##    #"<<endl
+<<"#      ## |#########O|          |#############|  ##    #"<<endl
+<<"#      ## |##########|          |#############|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void DcFcAcLcWo(){
+cout<<"    ####################################################"<<endl
+<<"    ####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#               Room in a House                        #'Door  Status : Close"<<endl
+<<"#                                                      #'Fan   Status : Close"<<endl
+<<"#      ############################################    #'AC    Status : Close"<<endl
+<<"#      ##        |(fan)         |############|   ##    #'Light Status : Close"<<endl
+<<"#      ##      --O--            |############|   ##    #'WindowStatus : Open"<<endl
+<<"#      ##                                        ##    #"<<endl
+<<"#      ##--|)                       (AC)         ##    #"<<endl
+<<"#      ##                                        ##    #"<<endl
+<<"#      ##  (lamp)                -------------   ##    #"<<endl
+<<"#      ##  __________           |####     ####|  ##    #"<<endl
+<<"#      ## |##########|          |####     ####|  ##    #"<<endl
+<<"#      ## |##########|          |***O     O***|  ##    #"<<endl
+<<"#      ## |#########O|          |####     ####|  ##    #"<<endl
+<<"#      ## |##########|          |####     ####|  ##    #"<<endl
+<<"#      ## |##########|           -------------   ##    #"<<endl
+<<"#      ## |##########|              (window)     ##    #"<<endl
+<<"#      ##  __________                            ##    #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;}
+void MainGateOpen(){
+cout <<"    ####################################################"<<endl
+<<"   #####################################################"<<endl
+<<"  #  #  |   |   |   |   |   |   |   |   |   |   |   |  #"<<endl
+<<" #  O # |_____________________________________________ #"<<endl
+<<"#      #|                                              #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#         ########                 ########            #"<<endl
+<<"#          ##     #               #     ##             #"<<endl
+<<"#          ##      #             #      ##             #"<<endl
+<<"#          ###############################             #"<<endl
+<<"#          ##        Main Gate          ##             #"<<endl
+<<"#          ###############################             #"<<endl
+<<"#          ##       Status:Open         ##             #"<<endl
+<<"#          ## ######              ##### ##             #"<<endl
+<<"#          ## ######              ##### ##             #"<<endl
+<<"#          ## #####O              O#### ##             #"<<endl
+<<"#          ## ######              ##### ##             #"<<endl
+<<"#          ## ######              ##### ##             #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void MainGateClose(){
+cout <<"########################################################"<<endl
+     <<"########################################################"<<endl
+     <<"  #   #  |   |   |   |   |   |   |   |   |      |  #####"<<endl
+     <<" #  O  # |________________________________________ #####"<<endl
+     <<"#       #|                                         #####"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"#          O#########          ##########O             #"<<endl
+<<"#          ##        #        #         ##             #"<<endl
+<<"#          ##         #      #          ##             #"<<endl
+<<"#          ##          #    #           ##             #"<<endl
+<<"#          ###############################             #"<<endl
+<<"#          #####     Main Gate      ######             #"<<endl
+<<"#          ###############################             #"<<endl
+<<"#          ##       Status:Close        ##             #"<<endl
+<<"#          ## ########### | ########### ##             #"<<endl
+<<"#          ## ########### | ########### ##             #"<<endl
+<<"#          ## ##########O | O########## ##             #"<<endl
+<<"#          ## ########### | ########### ##             #"<<endl
+<<"#          ## ########### | ########### ##             #"<<endl
+<<"#                                                      #"<<endl
+<<"#                                                      #"<<endl
+<<"########################################################"<<endl
+<<"########################################################"<<endl;
+}
+void menu(){
+cout << "*************************************\n";
+cout << "*************Instruction*************\n";
+cout << "** Press 1 to open main gate       **\n";
+cout << "** Press 2 to close main gate      **\n";
+cout << "** Press 3 to to Open room door    **\n";
+cout << "** Press 4 To close room door      **\n";
+cout << "** Press 5 to Turn light ON        **\n";
+cout << "** Press 6 to Turn light OFF       **\n";
+cout << "** Press 7 to Turn Fan On          **\n";
+cout << "** Press 8 to Turn Fan OFF         **\n";
+cout << "** Press 9 to Turn AC ON           **\n";
+cout << "** Press 10 to Turn AC OFF         **\n";
+cout << "** Press 11 to Open Window         **\n";
+cout << "** Press 12 to Close window        **\n";
+cout << "** Press 13 to D c Fo A c L o W c  **\n";
+cout << "** Press 14 to D c Fo A c L o W o  **\n";
+cout << "** press 15 to D c Fc A o L o W c  **\n";
+cout << "** press 16 to D c Fc A c L o W c  **\n";
+cout << "** press 17 to D c Fc A o L c W c  **\n";
+cout << "** press 18 to D c Fc A c L c W o  **\n";
+cout << "*************************************\n";
+cout << "**   1    |      2      |    3     **\n";
+cout << "*************************************\n";
+cout << "**   4    |      5      |    6     **\n";
+cout << "*************************************\n";
+cout << "**   7    |      8      |    9     **\n";
+cout << "*************************************\n";
+cout << "    Enter your choice here:_ ";
+}
+int main()
+{
+   int choice,chance;
+   menu();
+cin>> choice;
+for(int i=1;i>0;){
+switch(choice){
+case 1:
+    system("CLS");
+    MainGateOpen();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");
+        menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+
+    break;
+case 2:
+    system("CLS");
+    MainGateClose();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");
+          menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+            break;
+case 3:
+    //open door
+    system("CLS");
+    RoomDoorOpen();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");
+            menu();
+        cin>>choice;}
+       else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 4:
+    //door close
+    system("CLS");
+    Close("Door");
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+      else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 5:
+    //light open only other close
+    system("CLS");
+    DcFcAcLoWc();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 6:
+    //light Off
+    system("CLS");
+    Close("Light");
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+
+case 7:
+    //fan open
+    system("CLS");
+    FanOpen();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 8:
+    // close fan
+    system("CLS");
+    Close("Fan");
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 9:
+    // open ac
+    system("CLS");
+    AcOpen();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 10:
+    //close ac
+    system("CLS");
+    Close("AC");
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 11:
+    //window open
+    system("CLS");
+    DcFcAcLcWo();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 12:
+    //close window
+    system("CLS");
+    Close("Window");
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+       else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 13:
+    // Door close Fan open AC close Light Open Window close
+    system("CLS");
+    DcFoAcLoWc();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 14:
+    //Door close Fan open AC close Light open window open
+    system("CLS");
+    DcFoAcLoWo();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+       else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 15:
+    system("CLS");
+    DcFcAoLoWc();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+       else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 16:
+    system("CLS");
+    DcFcAcLoWc();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+       else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 17:
+    system("CLS");
+    DcFcAoLcWc();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;
+        }
+else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }
+        break;
+case 18:
+   {
+
+   system("CLS");
+    DcFcAcLcWo();
+    cout<<" Press 1 to make choice again"<<endl;
+    cin>>chance;
+    if(chance==1)
+        { system("CLS");menu();
+        cin>>choice;}
+        else
+            {cout<< "You Have not Entered Correct Key";
+            i=0;
+            }}
+        break;
+default:
+    cout<<"Wrong choice";
+    }}
+                          return 0;
+}
